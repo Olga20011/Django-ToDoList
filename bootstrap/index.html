@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+     crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="index.css">
+</head><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4
+     " crossorigin="anonymous"></script>
+<body>
+    <p id="lead">Women in Tech</p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/linda.jpg" class="d-block w-100" alt="..." width="40" height="900">
+        </div>
+        <div class="carousel-item">
+          <img src="images/e-limu.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/akira0.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  
+      <br>
+
+      <div  class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://files.realpython.com/media/real-python-logo-square.28474fda9228.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python is a language that is used to programe the backend side.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezhVs
+            YRiQ0QtxbNfOx41dbqWG4-StgIEo4Q&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Javascript</h5>
+              <p class="card-text">Javascript is majorly used for frontend though it can also be used for backend.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://curity.io/images/resources/code-examples/code-examples-kotlin.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kotlin</h5>
+              <p class="card-text">Kotlin is a new language used for developing android applications.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://braincake.net/assets/img/Swift_Lang.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Swift</h5>
+              <p class="card-text">Swift is a language used for programming Ios devices.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/originals/44/a3/70/44a3709104d16bce4a72a375bb1ff1de.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flutter</h5>
+              <p class="card-text">Flutter is Google's portable UI toolkit for crafting beautiful, 
+                natively compiled applications 
+                for mobile, web, and desktop from a single codebase.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHC
+            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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">C++</h5>
+              <p class="card-text">uses of C++ allows procedural programming for intensive functions of 
+                CPU and to provide control over hardware.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body" id="footer">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Copyright@AkiraChix 2021.</p>
+   
+      </div>
+    </div>
+    
+</body>
+</html>

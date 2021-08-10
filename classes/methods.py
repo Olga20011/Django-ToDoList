@@ -1,0 +1,16 @@
+a=[1,1,1,2,2,2,3,3,4,5,6,7,8,8,8,]
+print(sum(a))
+print(len(a))
+print(sum(a)/len(a))
+b=tuple(a)
+print(b)
+c=list(b)
+print(c)
+d=[10,15,16]
+a.extend(d)
+print(d)
+a.pop(0)
+print(a)
+x=["apples","oranges","carrots","tomatoes","onions"]
+print(x.index("tomatoes",0,4))
+print(a.count(2))

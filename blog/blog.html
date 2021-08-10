@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+</html>
+<html>
+  <head>
+    <title>Blog</title>
+  </head>
+  <body>
+      <p id="heading">fashion in Kenya</p>
+    <section>
+      <img class="slides" src="https://victormatara.com/wp-content/uploads/2017/08/IMG_20170823_120918.jpg" style="width: 50%; margin-left:auto; margin-right: auto;"/>
+      <img class="slides" src="https://www.micato.com/wp-content/uploads/2019/12/micatosafaris_35904968_Full-1050x700.jpg" style="width: 50%; margin-left:auto; margin-right: auto;"/>
+      <img class="slides" src="https://netstorage-tuko.akamaized.net/images/0fgjhs23cg0pum613g.jpg" style="width: 50%; margin-left:auto; margin-right: auto;"/>
+    </section>
+    <p id="fashion">The  fashion industry in  Kenya has grown tremendously over the last decade and several top fashion bloggers in Kenya have been steering the growth.  
+        From numerous clothe lines being launched to tens of fashion galas being held annually and hundreds of professionals in the fashion world coming out 
+         to proclaim there is indeed a lucrative career in the sector, the industry has seen its fair share of progress.  
+        However, not as much as I expected especially in the internet space. With more people growing passionate about fashion and others building careers, 
+        I was looking forward to seeing an array of fashion influencers taking up blogging to expand their reach and provide quality content from their 
+        experience online.   
+        My research on Fashion bloggers in Kenya led me to discover the huge gap of content that exist despite the insatiable thirst of quality content 
+        that Kenyan fashion enthusiasts have.  
+        Social media is awash with self-proclaimed influencers and socialites taking pictures in cool places while clad fashionably but 90% of these  
+        people know nothing about fashion.  
+        Kenya has very few successful fashion bloggers  
+        Get to know one of the fashion bloggers,YOUTUBERS</p>
+      <p id="group">Angella Nambooze, Intwaza Belyse, Dorothy Akoth, Promise Nuwasasira, Hamdi Abass, Olga Esther, Jackline Cheptanui, Sophia Ayugi</p>
+        <form>
+            <input type="text" name="Names" id="names">
+        </form>
+        <button type="submit"id="members" onclick="checkMembers()">Check</button>
+    <script> var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+        var y = document.getElementById("heading");
+        var z= y.getAttribute("id")
+        console.log(z)
+        y.style.textTransform="uppercase";
+        y.style.fontSize="large";
+        y.style.textAlign="center";
+        y.style.color="maroon";
+        document.body.setAttribute("style","color:white; background-color:grey");
+        var x = document.getElementsByClassName("slides");
+        x.getAttribute
+        function checkMembers(){
+            var input= document.getElementById("names").value;
+            var y = document.getAttribute("class");
+            var x = document.getElementById("members").hasAttribute("onclick");
+          document.getElementById("names").innerHTML = x;
+        }</script>
+  </body>
+</html>
