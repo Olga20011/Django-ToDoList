@@ -5,11 +5,11 @@ from .models import Post
 
 
 # Create your views here.
-class PostList( ListView ):
+class Post_list( ListView ):
     queryset=Post.objects.filter(status=1).order_by('-created_on')
     template_name='index.html'
 
-class PostDetail(DetailView):
+class Post_detail(DetailView):
     model=Post
     template_name='post_detail.html'    
 
