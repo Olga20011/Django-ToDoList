@@ -38,6 +38,5 @@ def deleteTask(request,pk):
     if request.method=='POST':
         item.delete()
         return HttpResponseRedirect(reverse("list"))  
-
     context={"item":item}
     return render(request,'tasks/delete.html')   

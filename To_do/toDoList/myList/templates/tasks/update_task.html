@@ -1,10 +1,30 @@
 <form method="POST" action="" >
     
     {% csrf_token %}
-
-    {{ form }}
-
-
+    {{ form.as_p}}
     <input type="submit" name="update task">
+
+    <style>
+        body{
+            background-color: #906abd;
+        }
+        form{
+            margin-left: 35%;
+            margin-top: 10%;
+            text-align: center;
+            width: 30%; 
+            background-color:white;
+            height: 50%;
+            border-radius: 40px;
+            -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        input{
+            text-align: center;
+            margin-top: 10%;
+            border-radius: 5px;
+          
+        }
+    </style>
 
 </form>

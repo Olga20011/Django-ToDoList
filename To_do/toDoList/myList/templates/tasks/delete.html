@@ -1,12 +1,55 @@
-<p>Are yousure you want to delete "{{ item }}"?</p>
 
-<a href="{% url 'list' %}">Cancel</a>
+
+<p>Are you sure you want to delete?</p>
+
+<a href="{% url 'list' %}"><button>Cancel</button></a>
 
 <form method="POST" action="">
 
     {% csrf_token %}
-
     <input type="submit" name="confirm">
+   
+
+    <style>
+        body{
+            background-color: #906abd;
+        }
+        form{
+            margin-left: 35%;
+            margin-top: 5%;
+            text-align: center;
+            width: 30%; 
+            background-color:white;
+            height: 50%;
+            border-radius: 40px;
+            -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        input{
+            text-align: center;
+            margin-top: 19%;
+            border-radius: 5px;
+            width: 40%;
+            height: 30px;
+            margin-left: 2%;
+        }
+        p{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 25px;
+            color: whitesmoke;
+            
+        }
+        button{
+            position: absolute;
+            border-radius:5px;
+            margin-top: 15%;
+            margin-left: 44%;
+            width: 12%;
+            height: 29px;
+
+        }
+    </style>
 
 
 </form>
